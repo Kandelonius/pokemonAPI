@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function PokeList(props) {
     const [name, setName] = useState('')
     const [url, setUrl] = useState('')
+    console.log(props)
+    debugger
     useEffect(() => {
         setName(props.character.name)
         setUrl(props.character.url)
